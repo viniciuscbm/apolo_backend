@@ -1,0 +1,84 @@
+AllCops:
+  NewCops: enable
+  DisplayCopNames: true
+  TargetRailsVersion: 6.0.3.4
+  TargetRubyVersion: 2.7.2
+  Exclude:
+    - "db/schema.rb"
+    - "db/migrate/*"
+    - ".git/**/*"
+    - "bin/**/*"
+    - "storage/**/*"
+    - "vendor/**/*"
+    - "log/**/*"
+    - "public/**/*"
+    - "tmp/**/*"
+RSpec/DescribedClass:
+  Enabled: false
+RSpec/ContextWording:
+  Enabled: false
+RSpec/NestedGroups:
+  Max: 4
+Bundler/OrderedGems:
+  Enabled: true
+Layout/HashAlignment:
+  EnforcedHashRocketStyle:
+    - key
+    - table
+  EnforcedColonStyle:
+    - key
+    - table
+Layout/ExtraSpacing:
+  AllowForAlignment: true
+Layout/ParameterAlignment:
+  EnforcedStyle: with_fixed_indentation
+Layout/LineLength:
+  Max: 120
+Metrics/BlockNesting:
+  Max: 2
+Metrics/ClassLength:
+  Max: 100
+Metrics/MethodLength:
+  Max: 10
+Metrics/ModuleLength:
+  Max: 200
+  Exclude:
+    - "spec/**/*"
+Metrics/ParameterLists:
+  Max: 4
+RSpec/MultipleExpectations:
+  Enabled: false
+RSpec/ExampleLength:
+  Enabled: false
+Rails:
+  Enabled: true
+Rails/SaveBang:
+  Enabled: true
+  Exclude:
+    - "spec/**/*"
+Rails/FilePath:
+  EnforcedStyle: arguments
+Rails/UnknownEnv:
+  Environments: ["development", "test", "production"]
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/GuardClause:
+  Enabled: true
+Style/Lambda:
+  EnforcedStyle: literal
+Style/MethodCalledOnDoEndBlock:
+  Enabled: true
+Style/OptionHash:
+  Enabled: true
+Style/RedundantFetchBlock:
+  Enabled: true
+Style/ReturnNil:
+  Enabled: true
+require:
+  - rubocop-rails
+  - rubocop-rspec
+  - rubocop-thread_safety
