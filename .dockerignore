@@ -1,0 +1,11 @@
+.dockerignore
+log
+.git
+.gitignore
+.bundleignore
+.bundle
+.rspec
+tmp
+log
+test
+README.md
