@@ -1,0 +1,4 @@
+branch: main
+minimum_score: 99.5
+threshold_score: 0.5
+no_browser: true
