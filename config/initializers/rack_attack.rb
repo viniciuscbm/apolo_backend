@@ -1,3 +1,5 @@
+Rack::Attack.cache.store = ActiveSupport::Cache::MemoryStore.new
+
 # Allow all local traffic
 Rack::Attack.safelist('allow-localhost') { |req| req.ip == '127.0.0.1' || req.ip == '::1' }
 

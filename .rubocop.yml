@@ -77,7 +77,7 @@ Style/MethodCalledOnDoEndBlock:
 Style/OptionHash:
   Enabled: true
 Style/RedundantFetchBlock:
-  Enabled: true
+  Enabled: false
 Style/ReturnNil:
   Enabled: true
 require:
