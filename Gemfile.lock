@@ -138,14 +138,17 @@ GEM
     pry (0.13.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
-    pry-byebug (3.9.0)
-      byebug (~> 11.0)
-      pry (~> 0.13.0)
+    pry-rails (0.3.9)
+      pry (>= 0.10.4)
     psych (3.2.0)
     public_suffix (4.0.6)
     puma (4.3.6)
       nio4r (~> 2.0)
     rack (2.2.3)
+    rack-attack (6.3.1)
+      rack (>= 1.0, < 3)
+    rack-cors (1.1.1)
+      rack (>= 2.0.0)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (6.0.3.4)
@@ -214,6 +217,9 @@ GEM
       unicode-display_width (>= 1.4.0, < 2.0)
     rubocop-ast (0.8.0)
       parser (>= 2.7.1.5)
+    rubocop-performance (1.9.0)
+      rubocop (>= 0.90.0, < 2.0)
+      rubocop-ast (>= 0.4.0)
     rubocop-rails (2.8.1)
       activesupport (>= 4.2.0)
       rack (>= 1.1)
@@ -284,11 +290,14 @@ DEPENDENCIES
   faker
   listen (~> 3.2)
   pg (>= 0.18, < 2.0)
-  pry-byebug
+  pry-rails
   puma (~> 4.1)
+  rack-attack
+  rack-cors
   rails (~> 6.0.3, >= 6.0.3.4)
   rspec-rails (~> 4.0.1)
   rubocop (~> 0.91.0)
+  rubocop-performance
   rubocop-rails
   rubocop-rspec
   rubocop-thread_safety
