@@ -25,6 +25,18 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
 
+  spring:
+    image: apolo_backend_web:latest
+    command: bundle exec spring server
+    depends_on:
+      - web
+    volumes:
+      - .:/app
+      - bundle_cache:/usr/local/bundle
+    env_file:
+      - .env
+    tty: true
+
 volumes:
   bundle_cache:
   pgdata:

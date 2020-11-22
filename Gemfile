@@ -28,7 +28,6 @@ gem 'rack-cors'
 # gem 'sentry-raven'
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'awesome_print'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'pry-rails'
@@ -46,10 +45,11 @@ group :development do
   gem 'brakeman',              require: false
   gem 'bundle-audit',          require: false
   gem 'listen', '~> 3.2'
-
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'parallel_tests'
   gem 'rubycritic', require: false
   gem 'spring'
+  gem 'spring-commands-parallel-tests'
+  gem 'spring-commands-rspec'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
