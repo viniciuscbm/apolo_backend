@@ -57,6 +57,7 @@ group :test do
   gem 'rspec-rails', '~> 4.0.1'
   gem 'shoulda-matchers', '~> 4.0'
   gem 'simplecov', require: false
+  gem 'simplecov-parallel'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
