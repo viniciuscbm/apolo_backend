@@ -23,18 +23,21 @@ gem 'puma', '~> 4.1'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
+gem 'friendly_id', '~> 5.4.0'
 gem 'rack-attack'
 gem 'rack-cors'
-gem 'friendly_id', '~> 5.4.0'
 # gem 'sentry-raven'
 
 group :development, :test do
   gem 'awesome_print'
+  gem 'bullet'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'fasterer'
   gem 'pry-rails'
 
   gem 'factory_bot_rails'
   gem 'faker'
+  gem 'rails_best_practices', require: false
   gem 'rubocop', '~> 0.91.0', require: false
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
@@ -44,7 +47,6 @@ end
 
 group :development do
   gem 'brakeman', require: false
-  gem 'bullet'
   gem 'bundle-audit', require: false
   gem 'listen', '~> 3.2'
   gem 'parallel_tests'
