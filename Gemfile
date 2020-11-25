@@ -28,6 +28,7 @@ gem 'rack-attack'
 gem 'rack-cors'
 # gem 'sentry-raven'
 gem 'devise'
+gem 'jwt'
 
 group :development, :test do
   gem 'awesome_print'

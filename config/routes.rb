@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   end
 
   resources :health_check, only: :index
+  resources :login, only: :create
 end
