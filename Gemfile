@@ -27,6 +27,7 @@ gem 'friendly_id', '~> 5.4.0'
 gem 'rack-attack'
 gem 'rack-cors'
 # gem 'sentry-raven'
+gem 'devise'
 
 group :development, :test do
   gem 'awesome_print'
