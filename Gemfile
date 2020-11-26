@@ -35,7 +35,7 @@ group :development, :test do
   gem 'bullet'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'fasterer'
-  gem 'pry-rails'
+  gem 'pry-byebug'
 
   gem 'factory_bot_rails'
   gem 'faker'

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe HealthCheckController, type: :request do
+RSpec.describe 'HealthCheck', type: :request do
   describe '#index' do
     context 'when the request is a success' do
       it 'return status code ok' do

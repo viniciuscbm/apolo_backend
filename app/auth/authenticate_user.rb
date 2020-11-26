@@ -31,6 +31,6 @@ class AuthenticateUser
   end
 
   def credentials?
-    user&.authenticate(password) ? true : false
+    user&.valid_password?(password) ? true : false
   end
 end
